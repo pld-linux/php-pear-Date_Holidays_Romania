@@ -1,22 +1,21 @@
 %include	/usr/lib/rpm/macros.php
-%define		_class		Date
-%define		_subclass	Holidays_Romania
 %define		_status		alpha
 %define		_pearname	Date_Holidays_Romania
 Summary:	%{_pearname} - Driver based class to calculate holidays in Romania
 Summary(pl.UTF-8):	%{_pearname} - klasa do obliczani dat świąt rumuńskich
 Name:		php-pear-%{_pearname}
 Version:	0.1.2
-Release:	1
+Release:	2
 License:	PHP License
 Group:		Development/Languages/PHP
 Source0:	http://pear.php.net/get/%{_pearname}-%{version}.tgz
 # Source0-md5:	18ac28cad200506565fed069457fe7a6
 URL:		http://pear.php.net/package/Date_Holidays_Romania/
 BuildRequires:	php-pear-PEAR
+BuildRequires:	php-pear-PEAR >= 1:1.4.0-0.b1
 BuildRequires:	rpm-php-pearprov >= 4.4.2-11
 Requires:	php-pear
-Requires:	php-pear-Date_Holidays >= 0.18.0
+Requires:	php-pear-Date_Holidays >= 0.21.1
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
